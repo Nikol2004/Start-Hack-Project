@@ -1,0 +1,105 @@
+/* 🌍 General Container */
+.socio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* 🌍 Hero Section */
+.socio-hero {
+    width: 100%;
+    height: 300px;
+    background-image: url("mali-bougouni-aerial-view-of-fields-in-arid-sahel-zone-VEGF01228 2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+}
+
+.socio-hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    max-width: 700px;
+}
+
+.socio-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.socio-subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* 📊 Socio-Economic Content */
+.socio-content {
+    text-align: center;
+    max-width: 900px;
+    margin-top: 40px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2b5876;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* 🔹 Charts Grid */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* 🔹 Individual Chart Styling */
+.chart-container {
+    position: relative;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.chart-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* 🔹 Tooltip */
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 90%;
+    max-width: 280px;
+}
