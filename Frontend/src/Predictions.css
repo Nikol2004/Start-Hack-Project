@@ -1,0 +1,138 @@
+/* 🌍 General Predictions Page Styling */
+.predictions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* 🌍 Hero Section */
+.predictions-hero {
+    width: 100%;
+    height: 320px;
+    background-image: url("mali-bougouni-aerial-view-of-fields-in-arid-sahel-zone-VEGF01228.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    position: relative;
+}
+
+/* 🔹 Dark Overlay for Readability */
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    max-width: 700px;
+}
+
+.predictions-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.predictions-subtitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* 📊 Predictions Content */
+.predictions-content {
+    text-align: center;
+    max-width: 900px;
+    margin-top: 40px;
+}
+
+/* 🔹 Section Titles */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e7e34;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* 🔹 Animated Chart Section */
+.chart-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 40px;
+    max-width: 90%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.prediction-chart {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Chart Hover Effect */
+.chart-container:hover {
+    transform: translateY(-5px);
+}
+
+/* 🌿 Findings Section */
+.summary-section {
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #e0f2f1, #a5d6a7);
+    border-radius: 12px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.summary-section p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* 🔥 Keyframe Animations */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
